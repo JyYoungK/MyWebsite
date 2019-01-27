@@ -113,18 +113,12 @@
 }
 
 /*-----------------------------------Food-------------------------------------*/
-.mySlides1 {
-  position: absolute;
-  left: -520px;
+.food{
+  padding: 40px;
 }
-
-.food_container{
+.foodinfo{
   text-indent: 50px;
-  position: absolute;
-  top: 250px;
-  right: 30px;
-  height: 300px;
-  width: 500px;
+  padding: 40px;
 }
 /*-----------------------------------Dance------------------------------------*/
 .mySlides2 {
