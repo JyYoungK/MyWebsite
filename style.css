@@ -42,13 +42,6 @@ html, body {
  right: 100;
 }
 
-/*Social*/
-.social {
- display: flex;
- position: absolute;
- top: 530px;
-}
-
 
 /*Side Bar*/
 .sidenav {
@@ -98,6 +91,33 @@ html, body {
  .sidenav a {font-size: 18px;}
 }
 
+/*----------------------------------Project-------------------------------------*/
+
+.project_container{
+ display: flex;
+ justify-content: center;
+ position: relative;
+}
+
+.title1 {
+ margin-top: 100px;
+ font-family: cursive;
+ font-size: 60px;
+ position: relative;
+}
+
+.game{
+padding-top: 60px;
+display: block;
+margin: 0 auto;
+}
+
+.game_info{
+  text-indent: 30px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
 /*----------------------------------Hobby-------------------------------------*/
 /*Hobby Title*/
 .hobby_container{
@@ -105,6 +125,7 @@ html, body {
  justify-content: center;
  position: relative;
  right: 90px;
+ top: 100px;
 }
 
 .title2 {
@@ -290,10 +311,35 @@ html, body {
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
-/*Gallery*/
+/*----------------------------------Contact------------------------------------*/
 
+.contact_container{
+ display: flex;
+ justify-content: center;
+ position: relative;
+ top: 1660px;
+}
 
+.title3 {
+ margin-top: 100px;
+ font-family: cursive;
+ font-size: 60px;
+ position: relative;
+}
 
+.social {
+ display: flex;
+ position: absolute;
+ top: 200px;
+}
+
+.social_info{
+  position: absolute;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
