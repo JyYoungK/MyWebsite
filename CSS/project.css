@@ -1,0 +1,224 @@
+/*Global*/
+/***************************************************/
+
+body{
+	width: 90vw;
+	font-size: 16px;
+	line-height: 1.75;
+	color: black;
+	animation: 1s ease-out fadeIn;
+}
+
+
+
+/*Titles*/
+/***************************************************/
+h1{
+	color: black;
+	size: 50px;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+project-body p{
+	font-family: 'Nunito', sans-serif;
+}
+
+
+body h2{
+	border-left: 5px solid;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	padding-left: 16px;
+	letter-spacing: 1px;
+	color: black;
+}
+
+h3 {
+	color: black;
+}
+
+h4{
+	font-size: 22px;
+}
+
+.youtube{
+	width: 65vw;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.youtube iframe{
+	width: 100%;
+	height: 50vh;
+}
+
+
+.header-pic{
+	width: 70%;
+	height: auto;
+
+}
+
+
+.amplify-project h2{
+	border-color: #fec771;
+}
+
+.spotify-project h2{
+	border-color: lightgreen;
+}
+
+.ngi-project h2{
+	border-color: #2E52A1;
+}
+
+.secondhome-project h2{
+	border-color: crimson;
+}
+
+.uoft-project h2{
+	border-color: steelblue;
+}
+
+.x1-project h2{
+	border-color: darkcyan;
+}
+
+.google-project h2{
+	border-color: #4285F4;
+}
+
+/*Colors*/
+/***************************************************/
+.spotify-color{
+	color: lightgreen;
+}
+
+.uoft-color{
+	color: steelblue;
+}
+
+.ngi-color{
+	color: #2E52A1;
+}
+
+.google-color{
+
+}
+
+/*Images*/
+/***************************************************/
+img{
+	width: 75vw;
+}
+
+.fit{
+	height: 100vh;
+	width: auto;
+}
+
+.banner{
+	width: 75vw;
+}
+
+.screenshot{
+	height: 80vh;
+	width: auto;
+	margin: auto 64px;
+}
+
+.opportunity img{
+	height: 60vh;
+	width: auto;
+}
+
+.laptop{
+	height: auto;
+	width: 40vw;
+}
+
+iframe{
+	margin-top: -64px;
+}
+
+/*Content*/
+/***************************************************/
+.phase{
+	width: 65vw;
+	text-align: left;
+	margin-top: 50px;
+}
+
+
+.strike{
+	text-decoration: line-through;
+	color: grey;
+	opacity: 0.5;
+}
+
+
+.opportunity{
+	width: 80vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.bottom{
+	text-align: center;
+}
+
+
+.next-button{
+	font-size: 30px;
+	color: grey;
+}
+
+.home-button{
+	font-size: 20px;
+	color: grey;
+}
+
+
+.next-button:hover, .home-button:hover{
+	color: #7FB069;
+}
+
+
+
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+  	h1{
+  		font-size: 8vw;
+  	}
+
+  	h4{
+  		font-size: 6vw;
+  		text-align: center;
+  	}
+
+  	body{
+  		font-size: 3vw;
+  	}
+
+	.phase{
+		width: 80vw;
+	}
+
+	.opportunity{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.opportunity img{
+		margin-top: 12px;
+	}
+
+
+}

@@ -1,0 +1,75 @@
+/*Header*/
+/***************************************************/
+header{
+	width: 75vw;
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header img{
+	height: 36px;
+	width: auto;
+}
+
+header h6{
+	margin-left: 16px;
+	font-size: 16px;
+	color: lightgrey;
+}
+
+header h6:hover{
+	color: black;
+	transition: background 0.5s;
+}
+
+
+header a img{
+	padding: 6px 6px;
+	height: 14px;
+	margin: auto 2px;
+	opacity: 0.3;
+}
+
+header a img:hover{
+	transition: background 0.5s;
+	opacity: 1;
+	/*background-color: #F0F0F0;
+	border-radius: 12px;*/
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	
+	header{
+	width: 90vw;
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+	header h6{
+		font-size:4vw;
+	}
+
+	header .flex-row img{
+	display: none;
+	}
+
+
+	header a img{
+	display: all;
+	padding: 6px 6px;
+	height: 32px;
+	margin: auto 12px;
+	opacity: 0.3;
+	}
+
+}
+
