@@ -1,3 +1,3 @@
 <?php
-include_once("web.html");
+include_once("website.html");
 ?>
