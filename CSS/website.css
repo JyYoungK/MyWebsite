@@ -65,6 +65,8 @@ hr {
     height: 25%;
     width: 150%;
     font-size: 30px;
+    position: absolute;
+    top: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -76,20 +78,22 @@ hr {
 		-4px 0 0 #df4a42,
 		2px 0 0 #91fcfe,
 		4px 0 0 #4405fc;
-	animation: blink 1s steps(4, start) infinite
+    animation: blink 1s steps(5, start) 5
+    /* animation: blink 1s steps(5, start) infinite */
+
 }
 
 @keyframes blink{
 	to {
-	visibility: hidden;
+	    visibility: hidden;
 	}
 }  
 
 .button-area {
-    height: 30%;
+    height: 40%;
 }
 
-.game-area {
+.main-area {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -101,22 +105,37 @@ hr {
     transition-timing-function: ease-in-out;
 }
 
-.new-game-area {
+.chat-area {
     /* height: 35%; */
     height: 0;
 }
 
-.join-game-area {
+.corona-area {
     /* height: 35%; */
     height: 0;
 }
 
-.lobby-area {
+.poker-area {
     /* height: 100%; */
     height: 0;
 }
 
-.gameplay-area {
+.camera-area {
+    /* height: 100%; */
+    height: 0;
+}
+
+.project-area {
+    /* height: 100%; */
+    height: 0;
+}
+
+.setting-area {
+    /* height: 100%; */
+    height: 0;
+}
+
+.about-area {
     /* height: 100%; */
     height: 0;
 }
