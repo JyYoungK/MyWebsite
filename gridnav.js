@@ -1,16 +1,16 @@
+// window.addEventListener('load', gotoabout); //starts off About Me
+
 var li = $('li');
 var liSelected;
-const GameAreaHeights = Object.freeze({
-    CHAT: "40%",
-    NEWGAME: "30%",
-    JOINGAME: "30%",
-    LOBBY: "30%",
-});
+const LobbyHeight = "40%";
 
-const AnimationTimer = 1000;
+const AnimationTimer = 800;
+jQuery.event.trigger({ type: 'keydown', which: 40 });
 
-$(window).keydown(function(e){
-    if(e.which === 40){ //Down
+
+
+$(document).keydown(function(e){
+    if(e.which == 40 || e.which == 83){ //Down
         if(liSelected){
             liSelected.removeClass('selected');
             next = liSelected.next();
@@ -22,7 +22,8 @@ $(window).keydown(function(e){
         }else{
             liSelected = li.eq(0).addClass('selected');
         }
-    }else if(e.which === 38){ //Up
+    }
+    if(e.which == 38 || e.which == 87){ //Up
         if(liSelected){
             liSelected.removeClass('selected');
             next = liSelected.prev();
@@ -34,77 +35,77 @@ $(window).keydown(function(e){
         }else{
             liSelected = li.last().addClass('selected');
         }
-    }else if(e.which === 13){ //Enter
+    }
+    if(e.which == 13){ //Enter
+        e.preventDefault();
         var name = liSelected.attr("class").split(' ')[0];
-        // switch(name){
-        //     case "option1":
-        //         name = "chat-area";
-        //         break;
-        //     case "option2":
-        //         name = "corona-area";
-        //         break;
-        //     case "option3":
-        //         name = "poker-area";
-        //         break;
-        //     case "option4":
-        //         name = "camera-area";
-        //         break;
-        //     case "option5":
-        //         name = "project-area";
-        //         break;
-        //     case "option6":
-        //         name = "setting-area";
-        //         break;
-        //     case "option7":
-        //         name = "about-area";
-        //         break;
-        // }
-        setTimeout(() => { $(".chat-area").css("height", GameAreaHeights.NEWGAME); }, AnimationTimer); //Open
-
-        // setTimeout(() => { $(`.${name}`).css("height", GameAreaHeights.NEWGAME); }, AnimationTimer); //Open
+        switch(name){
+            case "option1":
+                name = "chat-area";
+                break;
+            case "option2":
+                name = "corona-area";
+                break;
+            case "option3":
+                name = "poker-area";
+                break;
+            case "option4":
+                name = "camera-area";
+                break;
+            case "option5":
+                name = "project-area";
+                break;
+            case "option6":
+                name = "setting-area";
+                break;
+            case "option7":
+                name = "about-area";
+                break;
+        }
+        setTimeout(() => { $(`.${name}`).css("height", LobbyHeight); }, AnimationTimer); //Open
         $(".select-area").css("height", "0"); //Close
     }
 });
 
 function gotochat() {
-    setTimeout(() => { $(".chat-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer); //Open
+    setTimeout(() => { $(".chat-area").css("height", LobbyHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotocorona() {
-    setTimeout(() => { $(".corona-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer); //Open
+    setTimeout(() => { $(".corona-area").css("height", LobbyHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotopoker() {
-    setTimeout(() => { $(".poker-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer); //Open
+    setTimeout(() => { $(".poker-area").css("height", LobbyHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotocamera() {
-    setTimeout(() => { $(".camera-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer); //Open
+    setTimeout(() => { $(".camera-area").css("height", LobbyHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotoproject() {
-    setTimeout(() => { $(".project-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer); //Open
+    setTimeout(() => { $(".project-area").css("height", LobbyHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotosetting() {
-    setTimeout(() => { $(".setting-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer); //Open
+    setTimeout(() => { $(".setting-area").css("height", LobbyHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotoabout() {
-    setTimeout(() => { $(".about-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer); //Open
+    setTimeout(() => { $(".about-area").css("height", LobbyHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 
 $(".back-button").click( function(event){
     var name = $(this).closest('div').attr("class").split(' ')[1];
-    setTimeout(() => { $(".select-area").css("height", GameAreaHeights.CHAT); }, AnimationTimer);
+    setTimeout(() => { $(".select-area").css("height", LobbyHeight); }, AnimationTimer);
     $(`.${name}`).css("height", "0");
 });
 

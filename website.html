@@ -8,16 +8,14 @@
 	<link rel="shortcut icon" type="image/png" href="Images/Me/title.png"/>
 	<link rel="stylesheet" type="text/css" href="CSS/website.css">
 	<link rel="stylesheet" type="text/css" href="CSS/setting.css">
-	<!-- <link rel="stylesheet" type="text/css" href="CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="CSS/animation.css">
-	<link rel="stylesheet" type="text/css" href="CSS/header-home.css">
-	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
-	<link rel="stylesheet" type="text/css" href="CSS/new.css"> -->
+	<link rel="stylesheet" type="text/css" href="CSS/about.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body class="theme-light">
+	<audio loop id="myAudio"src="audio/arcade.mp3" preload ="auto"> </audio>
+
 	<div class="content-area">
-		<button class="theme-button" id="theme-button">MODE</button>
 		<p class= 'title'>Insert Coin</p>
 
 		<hr>
@@ -34,38 +32,85 @@
 			</div>
 
 			<div class="main-area chat-area">
-				<h2> Chat </h2>
-				<button class ="back-button">BACK</button>
+				<h2> Click the link to open a chat server </h2>
+
+				<button class ="back-button">BACK
+				    <span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+				</button>
 			</div>
 
 			<div class="main-area corona-area">
 				<h2> Corona </h2>
-				<button class ="back-button">BACK</button>
+
+				<button class ="back-button">BACK
+				    <span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+				</button>
 			</div>
 
 			<div class="main-area poker-area">
 				<h2> Poker </h2>
-				<button class ="back-button">BACK</button>
+
+				<button class ="back-button">BACK
+				    <span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+				</button>
 			</div>
 
 			<div class="main-area camera-area">
 				<h2> Camera</h2>
-				<button class ="back-button">BACK</button>
+
+				<button class ="back-button">BACK
+				    <span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+				</button>
 			</div>
 
 			<div class="main-area project-area">
 				<h2> Project</h2>
-				<button class ="back-button">BACK</button>
+
+				<p> </p>
+
+				<button class ="back-button">BACK
+				    <span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+				</button>
 			</div>
 
 			<div class="main-area setting-area">
-				<h2> Setting</h2>
-				<button class ="back-button">BACK</button>
+				<h2 id="gamefont"> Settings </h2>
+				<pre id="gamefont2"> Background Theme    <label class="switch"> <input type="checkbox" checked id="theme-button"> <span class="slider"></span></label> </pre> 
+				<pre id="gamefont2">   Music ON/OFF      <label class="switch"> <input type="checkbox" id="sound-button"> <span class="slider"></span></label> </pre> 
+
+				<button class ="back-button">BACK
+				    <span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+				</button>
 			</div>
 
 			<div class="main-area about-area">
-				<h2> About</h2>
-				<button class ="back-button">BACK</button>
+				<h2 id="gamefont"> About Me</h2>
+
+				<p id="smallgamefont"> Hello, my name is Johnny Kang, I am from Toronto, Canada. I like to work on my own projects such as making games, AI, stats, etc. Take your time and feel free to try out things I made. </p>
+				<button class ="back-button">BACK
+				    <span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+				</button>
 			</div>
 		<hr>
 	</div>
@@ -73,6 +118,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="gridnav.js"></script>
 	<script src="./server/index.js"></script>
+
+	
 
 </body>
 </html>
