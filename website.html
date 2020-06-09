@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="author" content="Junyoung Kang">
 	<title>Johnny Kang</title>
 	<link rel="shortcut icon" type="image/png" href="Images/Me/title.png"/>
 	<link rel="stylesheet" type="text/css" href="CSS/website.css">
@@ -18,30 +19,31 @@
 	<div class="content-area">
 		<button class="theme-button" id="theme-button">MODE</button>
 		<p class= 'title'>Insert Coin</p>
+
 		<hr>
 			<div class="game-area button-area">
-				<ul class = "game-area button-area" id="horizontal">
-					<li class="game_button" id="gamefont">Chatting</li>
-					<li class="game_button" id="gamefont">Corona Stats</li>
-					<li class="game_button" id="gamefont">Card Game</li>
-					<li class="game_button" id="gamefont">Credits</li>
-					<li class="game_button" id="gamefont">Settings</li>
+				<ul id="horizontal">
+					<li onclick= "gotochat()" id="gamefont">Chatting</li>
+					<li onclick= "gotochat()" id="gamefont">Corona Stats</li>
+					<li onclick= "gotochat()" id="gamefont">Card Game</li>
+					<li onclick= "gotochat()" id="gamefont">Other Projects</li>
+					<li onclick= "gotochat()" id="gamefont">Settings</li>
+					<li onclick= "gotochat()" id="gamefont">About Me</li>
 				</ul>
 			</div>
+
 			<div class="game-area new-game-area">
-				hellllooo
+				<h2> hello</h2>
 				<div class="button-pair">
-					<button class="game-button back-button" id="new-game-back-button">BACK</button>
+					<button class="game-button back-button">BACK</button>
 				</div>
 			</div>
 		<hr>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="./server/index.js"></script>
-    <script src="./client/connection.js"></script>
-    <script src="./client/main.js"></script>
 	<script src="gridnav.js"></script>
+	<script src="./server/index.js"></script>
 
 </body>
 </html>

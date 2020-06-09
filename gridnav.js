@@ -1,12 +1,12 @@
 var li = $('li');
 var liSelected;
 const GameAreaHeights = Object.freeze({
-    BUTTON: "15%",
-    NEWGAME: "35%",
-    JOINGAME: "35%",
-    LOBBY: "100%",
-    GAMEPLAY: "100%"
+    NEWGAME: "30%",
+    JOINGAME: "30%",
+    LOBBY: "30%",
 });
+
+const AnimationTimer = 300;
 
 $(window).keydown(function(e){
     if(e.which === 40){ //Down
@@ -33,8 +33,24 @@ $(window).keydown(function(e){
         }else{
             liSelected = li.last().addClass('selected');
         }
-    }else if(e.which === 13){ //Up
-        setTimeout(() => { $(".new-game-area").css("height", GameAreaHeights.NEWGAME); }, 300); //Open
+    }else if(e.which === 13){ //Enter
+        setTimeout(() => { $(".new-game-area").css("height", GameAreaHeights.NEWGAME); }, AnimationTimer); //Open
         $(".button-area").css("height", "0"); //Close
     }
 });
+
+function gotochat() {
+    setTimeout(() => { $(".new-game-area").css("height", GameAreaHeights.NEWGAME); }, AnimationTimer); //Open
+    $(".button-area").css("height", "0"); //Close
+};
+
+$("#new-game-button").click(() => {
+    setTimeout(() => { $(".new-game-area").css("height", GameAreaHeights.NEWGAME); }, AnimationTimer); //Open
+    $(".button-area").css("height", "0"); //Close
+});
+
+$(".back-button").click(() => {
+    setTimeout(() => { $(".button-area").css("height", GameAreaHeights.NEWGAME); }, AnimationTimer);
+    $(".new-game-area").css("height", "0");
+});
+
