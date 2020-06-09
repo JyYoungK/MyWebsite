@@ -2,7 +2,7 @@ var isPlaying = false;
 
 // ------------------------------------------------Initial Settings------------------------------------------------
 const Themes = Object.freeze({
-    LIGHT: "theme-light",
+    ARCADE: "theme-arcade",
     DARK: "theme-dark"
 });
 
@@ -14,7 +14,7 @@ let settings = {
 changeTheme(settings.theme);
 
 /** Change the theme of the app
- * @param {string} newTheme theme-light or theme-dark
+ * @param {string} newTheme theme-arcade or theme-dark
  **/
 
 function changeTheme(newTheme) {
@@ -42,7 +42,7 @@ myAudio.onpause = function(){
 };
 
 $("#theme-button").click(() => {
-    changeTheme((settings.theme === Themes.DARK ? Themes.LIGHT : Themes.DARK));
+    changeTheme((settings.theme === Themes.DARK ? Themes.ARCADE : Themes.DARK));
 });
 
 $("#sound-button").click(() => {

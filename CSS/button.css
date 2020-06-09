@@ -70,7 +70,7 @@ button span:nth-child(2){
     width: 3px;
     top:-70px;
     right:0px;
-    background: linear-gradient(to bottom, rgba(171, 226, 19, 0), rgb(128, 0, 128));
+    background: linear-gradient(to bottom, rgba(171, 226, 19, 0), rgb(245, 41, 245));
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
     animation: span2 2s linear infinite;
@@ -89,7 +89,7 @@ button span:nth-child(3){
     width:200px;
     right:-200px;
     bottom: 0px;
-    background: linear-gradient(to left, rgba(171, 226, 19, 0), rgb(128, 0, 128));
+    background: linear-gradient(to left, rgba(171, 226, 19, 0), rgb(245, 41, 245));
     border-top-left-radius: 1px;
     border-bottom-left-radius: 1px;
     animation: span3 2s linear infinite;
