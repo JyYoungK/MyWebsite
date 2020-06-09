@@ -103,9 +103,10 @@ function gotoabout() {
 };
 
 
-$(".back-button").click( function(event){
+$(".back-to-menu-button").click( function(event){
     var name = $(this).closest('div').attr("class").split(' ')[1];
     setTimeout(() => { $(".select-area").css("height", LobbyHeight); }, AnimationTimer);
+    $(".chat-area").css("height", "0");
     $(`.${name}`).css("height", "0");
 });
 

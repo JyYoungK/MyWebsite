@@ -1,7 +1,7 @@
 .theme-light {
     --main-color: #222;
     --border-color: #888;
-    --bg-color: #fff;
+    --bg-color: rgb(175, 92, 92);
     --accent-color: #B00020;
     --small-text-color: #999;
     --button-disabled-color: #88888844;
@@ -91,10 +91,3 @@ input:checked + .slider:before {
     -ms-transform: translateX(23px);
     transform: translateX(23px);
   }
-
-#gamefont2 {
-	color:rgba(138, 43, 226);
-	font-family: 'Press Start 2P', cursive;
-    text-shadow:2px 2px #3498db;
-    padding: 5px;
-}

@@ -8,7 +8,8 @@
 	<link rel="shortcut icon" type="image/png" href="Images/Me/title.png"/>
 	<link rel="stylesheet" type="text/css" href="CSS/website.css">
 	<link rel="stylesheet" type="text/css" href="CSS/setting.css">
-	<link rel="stylesheet" type="text/css" href="CSS/about.css">
+	<link rel="stylesheet" type="text/css" href="CSS/font.css">
+	<link rel="stylesheet" type="text/css" href="CSS/button.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
@@ -17,11 +18,12 @@
 
 	<div class="content-area">
 		<p class= 'title'>Insert Coin</p>
+		<button class="theme-button" id="theme-button">MODE</button>
 
 		<hr>
 			<div class="main-area select-area">
 				<ul id="horizontal">
-					<li onclick= "gotochat()" class="option1" id="gamefont">Chatting</li>
+					<li onclick= "gotochat()" class="option1" id="gamefont">Chat Area</li>
 					<li onclick= "gotocorona()" class="option2" id="gamefont">Corona Stats</li>
 					<li onclick= "gotopoker()" class="option3" id="gamefont">Poker Game</li>
 					<li onclick= "gotocamera()" class="option4" id="gamefont">Smart Camera</li>
@@ -32,20 +34,31 @@
 			</div>
 
 			<div class="main-area chat-area">
-				<h2> Click the link to open a chat server </h2>
+				<h2 id="gamefont"> Chat Area </h2>
 
-				<button class ="back-button">BACK
-				    <span></span>
-					<span></span>
-					<span></span>
-					<span></span>	
-				</button>
+				<h2 id="chatareafont"> Click 'ENTER' to open a chat server. Enter your name and a room number to host or join an already existing room. Settings will be resetted and music will be disabled. Made by react.js, the client-side is uploaded on netlify and the server-side is uploaded on heroku. </h2>
+				
+				<div class="chat-button-area">
+					<button class ="enter-button" onclick="location.href='https://5edfea6442fbf4e701908af2--dazzling-archimedes-4b0ce4.netlify.app/'">ENTER
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>	
+					</button>
+	
+					<button class ="back-to-menu-button">BACK
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>	
+					</button>
+				</div>
 			</div>
 
 			<div class="main-area corona-area">
 				<h2> Corona </h2>
 
-				<button class ="back-button">BACK
+				<button class ="back-to-menu-button">BACK
 				    <span></span>
 					<span></span>
 					<span></span>
@@ -56,7 +69,7 @@
 			<div class="main-area poker-area">
 				<h2> Poker </h2>
 
-				<button class ="back-button">BACK
+				<button class ="back-to-menu-button">BACK
 				    <span></span>
 					<span></span>
 					<span></span>
@@ -67,7 +80,7 @@
 			<div class="main-area camera-area">
 				<h2> Camera</h2>
 
-				<button class ="back-button">BACK
+				<button class ="back-to-menu-button">BACK
 				    <span></span>
 					<span></span>
 					<span></span>
@@ -80,7 +93,7 @@
 
 				<p> </p>
 
-				<button class ="back-button">BACK
+				<button class ="back-to-menu-button">BACK
 				    <span></span>
 					<span></span>
 					<span></span>
@@ -93,7 +106,7 @@
 				<pre id="gamefont2"> Background Theme    <label class="switch"> <input type="checkbox" checked id="theme-button"> <span class="slider"></span></label> </pre> 
 				<pre id="gamefont2">   Music ON/OFF      <label class="switch"> <input type="checkbox" id="sound-button"> <span class="slider"></span></label> </pre> 
 
-				<button class ="back-button">BACK
+				<button class ="back-to-menu-button">BACK
 				    <span></span>
 					<span></span>
 					<span></span>
@@ -105,7 +118,7 @@
 				<h2 id="gamefont"> About Me</h2>
 
 				<p id="smallgamefont"> Hello, my name is Johnny Kang, I am from Toronto, Canada. I like to work on my own projects such as making games, AI, stats, etc. Take your time and feel free to try out things I made. </p>
-				<button class ="back-button">BACK
+				<button class ="back-to-menu-button">BACK
 				    <span></span>
 					<span></span>
 					<span></span>
@@ -116,8 +129,8 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="gridnav.js"></script>
-	<script src="./server/index.js"></script>
+	<script src="./JS/buttons.js"></script>
+	<script src="./JS/settings.js"></script>
 
 	
 
