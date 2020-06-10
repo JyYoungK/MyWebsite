@@ -2,7 +2,8 @@
 
 var li = $('li');
 var liSelected;
-const LobbyHeight = "40%";
+const lobbyHeight = "50%";
+const contentHeight = "80%";
 
 const AnimationTimer = 800;
 jQuery.event.trigger({ type: 'keydown', which: 40 });
@@ -62,50 +63,50 @@ $(document).keydown(function(e){
                 name = "about-area";
                 break;
         }
-        setTimeout(() => { $(`.${name}`).css("height", LobbyHeight); }, AnimationTimer); //Open
+        setTimeout(() => { $(`.${name}`).css("height", contentHeight); }, AnimationTimer); //Open
         $(".select-area").css("height", "0"); //Close
     }
 });
 
 function gotochat() {
-    setTimeout(() => { $(".chat-area").css("height", LobbyHeight); }, AnimationTimer); //Open
+    setTimeout(() => { $(".chat-area").css("height", contentHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotocorona() {
-    setTimeout(() => { $(".corona-area").css("height", LobbyHeight); }, AnimationTimer); //Open
+    setTimeout(() => { $(".corona-area").css("height", contentHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotopoker() {
-    setTimeout(() => { $(".poker-area").css("height", LobbyHeight); }, AnimationTimer); //Open
+    setTimeout(() => { $(".poker-area").css("height", contentHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotocamera() {
-    setTimeout(() => { $(".camera-area").css("height", LobbyHeight); }, AnimationTimer); //Open
+    setTimeout(() => { $(".camera-area").css("height", contentHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotoproject() {
-    setTimeout(() => { $(".project-area").css("height", LobbyHeight); }, AnimationTimer); //Open
+    setTimeout(() => { $(".project-area").css("height", contentHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotosetting() {
-    setTimeout(() => { $(".setting-area").css("height", LobbyHeight); }, AnimationTimer); //Open
+    setTimeout(() => { $(".setting-area").css("height", contentHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 function gotoabout() {
-    setTimeout(() => { $(".about-area").css("height", LobbyHeight); }, AnimationTimer); //Open
+    setTimeout(() => { $(".about-area").css("height", contentHeight); }, AnimationTimer); //Open
     $(".select-area").css("height", "0"); //Close
 };
 
 
-$(".back-to-menu-button").click( function(event){
+$(".back-to-menu-button").click( function(){
     var name = $(this).closest('div').attr("class").split(' ')[1];
-    setTimeout(() => { $(".select-area").css("height", LobbyHeight); }, AnimationTimer);
+    setTimeout(() => { $(".select-area").css("height", lobbyHeight); }, AnimationTimer);
     $(".chat-area").css("height", "0");
     $(`.${name}`).css("height", "0");
 });

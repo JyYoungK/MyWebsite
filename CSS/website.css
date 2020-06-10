@@ -43,7 +43,7 @@ hr {
 }
 
  .title {
-    height: 25%;
+    height: 10%;
     width: 150%;
     font-size: 30px;
     position: absolute;
@@ -69,10 +69,6 @@ hr {
 	}
 }  
 
-.button-area {
-    height: 40%;
-}
-
 .main-area {
     width: 100%;
     display: flex;
@@ -83,6 +79,11 @@ hr {
     transition-duration: 0.5s;
     overflow: hidden;
     transition-timing-function: ease-in-out;
+}
+
+/*Main Default Area Height, others are closed by having 0 height until someone opens them*/
+.select-area { 
+    height: 50%;
 }
 
 .chat-area {

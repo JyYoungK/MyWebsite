@@ -12,14 +12,6 @@
     padding: 5px;
 }
 
-#smallgamefont {
-	color:rgb(218, 31, 208);
-	font-family: 'Press Start 2P', cursive;
-    text-shadow:2px 2px purple;
-	padding: 5px;
-	padding-top: 4px;
-}
-
 #chatareafont {
 	color:rgb(218, 31, 208);
 	text-indent: 30px;
@@ -28,4 +20,23 @@
 	text-shadow:2px 2px purple;
 	padding: 2px;
 	padding-top: 4px;
+}
+
+#aboutareafont {
+	color:orange;
+	font-family: 'Press Start 2P', cursive;
+    text-shadow:2px 2px purple;
+}
+
+#aboutareafont2 {
+	color:purple;
+	font-family: 'Press Start 2P', cursive;
+    text-shadow:2px 2px lightblue;
+	font-size: 15px;
+}
+
+#aboutareafont3 {
+	color:lightgreen;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 14px;
 }
