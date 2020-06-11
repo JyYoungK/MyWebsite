@@ -22,6 +22,12 @@
 	padding-top: 4px;
 }
 
+.cameraareafont{
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 14px;
+}
+
 #aboutareafont {
 	color:orange;
 	font-family: 'Press Start 2P', cursive;

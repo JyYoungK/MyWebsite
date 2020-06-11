@@ -54,7 +54,7 @@ async function predict() {
               animal = prediction[i].className;
             }
         }
-        labelContainer.childNodes[1].innerHTML = "You look " + biggest*100 + "% like a " + animal + " according to my calculation";
+        labelContainer.childNodes[1].innerHTML = "You look " + (biggest*100).toFixed(0) + "% like a " + animal + " according to my calculation";
     }
 
 }

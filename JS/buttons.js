@@ -4,9 +4,10 @@ var li = $('li');
 var liSelected;
 const heights = {
     select : "40%",
-    chat : "80%",
-    poker : "80%",
-    camera : "80%",
+    chat : "40%",
+    corona : "40%",
+    poker : "40%",
+    camera : "70%",
     project : "80%",
     setting : "40%",
     about : "60%",

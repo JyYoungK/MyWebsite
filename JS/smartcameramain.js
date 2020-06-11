@@ -5,7 +5,6 @@ function readURL(input) {
 
     reader.onload = function(e) {
       $('.image-upload-wrap').hide();
-
       $('.file-upload-image').attr('src', e.target.result);
       $('.file-upload-content').show();
 
@@ -23,6 +22,8 @@ function removeUpload() {
   $('.file-upload-input').replaceWith($('.file-upload-input').clone());
   $('.file-upload-content').hide();
   $('.image-upload-wrap').show();
+  labelContainer = document.getElementById("label-container");
+  labelContainer.innerHTML = "";
 }
 $('.image-upload-wrap').bind('dragover', function () {
 		$('.image-upload-wrap').addClass('image-dropping');
