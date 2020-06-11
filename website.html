@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/setting.css">
 	<link rel="stylesheet" type="text/css" href="CSS/font.css">
 	<link rel="stylesheet" type="text/css" href="CSS/button.css">
+	<link rel="stylesheet" type="text/css" href="CSS/smartcamera.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
@@ -21,7 +22,7 @@
 		<!-- <button class="theme-button" id="theme-button">MODE</button> -->
 
 		<hr>
-			<div class="main-area select-area">
+			<div class="main-area select">
 				<ul id="horizontal">
 					<li onclick= "gotochat()" class="option1" id="gamefont">Chat Area</li>
 					<li onclick= "gotocorona()" class="option2" id="gamefont">Corona Stats</li>
@@ -33,7 +34,7 @@
 				</ul>
 			</div>
 
-			<div class="main-area chat-area">
+			<div class="main-area chat">
 				<h2 id="gamefont"> Chat Area </h2>
 
 				<h2 id="chatareafont"> Click 'ENTER' to open a chat server. Enter your name and a room number to host or join an already existing room. Settings will be resetted and music will be disabled. Made by react.js, the client-side is uploaded on netlify and the server-side is uploaded on heroku. </h2>
@@ -55,7 +56,7 @@
 				</div>
 			</div>
 
-			<div class="main-area corona-area">
+			<div class="main-area corona">
 				<h2> Corona </h2>
 
 				<button class ="back-to-menu-button">BACK
@@ -66,7 +67,7 @@
 				</button>
 			</div>
 
-			<div class="main-area poker-area">
+			<div class="main-area poker">
 				<h2> Poker </h2>
 
 				<button class ="back-to-menu-button">BACK
@@ -77,18 +78,45 @@
 				</button>
 			</div>
 
-			<div class="main-area camera-area">
-				<h2> Camera</h2>
-
+			<div class="main-area camera">
+				<h2 id="gamefont"> Smart Camera</h2>
+				<div class="file-upload">  
+					<div class="image-upload-wrap">
+					  <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+					  <div class="drag-text">
+						<h3>Drag and drop a file or select add Image</h3>
+					  </div>
+					</div>
+					<div class="file-upload-content">
+					  <img class="file-upload-image" id = "face-image" src="#" alt="your image" />
+					  <div class="image-title-wrap">
+						<button class ="enter-button" onclick="init()"> Calculate
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>	
+						</button>
+		
+						<button class="remove-image" onclick="removeUpload()">Remove
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>	
+						</button>
+					</div>
+					</div>
+					<div id="label-container"></div>
+				</div>
 				<button class ="back-to-menu-button">BACK
-				    <span></span>
+					<span></span>
 					<span></span>
 					<span></span>
 					<span></span>	
 				</button>
+
 			</div>
 
-			<div class="main-area project-area">
+			<div class="main-area project">
 				<h2> Project</h2>
 
 				<p> </p>
@@ -101,7 +129,7 @@
 				</button>
 			</div>
 
-			<div class="main-area setting-area">
+			<div class="main-area setting">
 				<h2 id="gamefont"> Settings </h2>
 				<pre id="gamefont2">   Theme ON/OFF   <label class="switch"> <input type="checkbox" id="theme-button"> <span class="slider"></span></label> </pre> 
 				<pre id="gamefont2">   Music ON/OFF   <label class="switch"> <input type="checkbox" id="sound-button"> <span class="slider"></span></label> </pre> 
@@ -114,7 +142,7 @@
 				</button>
 			</div>
 
-			<div class="main-area about-area">
+			<div class="main-area about">
 				<h2 id="gamefont"> About Me</h2>
 
 				<p id="aboutareafont"> Hello, my name is Johnny Kang, I am from Toronto, Canada. </p>
@@ -131,6 +159,11 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+	<script src="./JS/smartcameramain.js"></script>
+	<script src="./JS/animalcalculation.js"></script>
 	<script src="./JS/buttons.js"></script>
 	<script src="./JS/settings.js"></script>
 

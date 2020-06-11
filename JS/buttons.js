@@ -2,12 +2,19 @@
 
 var li = $('li');
 var liSelected;
-const lobbyHeight = "50%";
-const contentHeight = "80%";
+const heights = {
+    select : "40%",
+    chat : "80%",
+    poker : "80%",
+    camera : "80%",
+    project : "80%",
+    setting : "40%",
+    about : "60%",
+};
+// const contentHeight = "80%";
 
 const AnimationTimer = 800;
 jQuery.event.trigger({ type: 'keydown', which: 40 });
-
 
 
 $(document).keydown(function(e){
@@ -42,72 +49,72 @@ $(document).keydown(function(e){
         var name = liSelected.attr("class").split(' ')[0];
         switch(name){
             case "option1":
-                name = "chat-area";
+                name = "chat";
                 break;
             case "option2":
-                name = "corona-area";
+                name = "corona";
                 break;
             case "option3":
-                name = "poker-area";
+                name = "poker";
                 break;
             case "option4":
-                name = "camera-area";
+                name = "camera";
                 break;
             case "option5":
-                name = "project-area";
+                name = "project";
                 break;
             case "option6":
-                name = "setting-area";
+                name = "setting";
                 break;
             case "option7":
-                name = "about-area";
+                name = "about";
                 break;
         }
-        setTimeout(() => { $(`.${name}`).css("height", contentHeight); }, AnimationTimer); //Open
-        $(".select-area").css("height", "0"); //Close
+        setTimeout(() => { $(`.${name}`).css("height", heights[name])}, AnimationTimer); //Open
+        $(".select").css("height", "0"); //Close
     }
 });
 
 function gotochat() {
-    setTimeout(() => { $(".chat-area").css("height", contentHeight); }, AnimationTimer); //Open
-    $(".select-area").css("height", "0"); //Close
+    setTimeout(() => { $(".chat").css("height", heights.chat); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
 };
 
 function gotocorona() {
-    setTimeout(() => { $(".corona-area").css("height", contentHeight); }, AnimationTimer); //Open
-    $(".select-area").css("height", "0"); //Close
+    setTimeout(() => { $(".corona").css("height", heights.corona); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
 };
 
 function gotopoker() {
-    setTimeout(() => { $(".poker-area").css("height", contentHeight); }, AnimationTimer); //Open
-    $(".select-area").css("height", "0"); //Close
+    setTimeout(() => { $(".poker").css("height", heights.poker); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
 };
 
 function gotocamera() {
-    setTimeout(() => { $(".camera-area").css("height", contentHeight); }, AnimationTimer); //Open
-    $(".select-area").css("height", "0"); //Close
+    setTimeout(() => { $(".camera").css("height", heights.camera); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
 };
 
 function gotoproject() {
-    setTimeout(() => { $(".project-area").css("height", contentHeight); }, AnimationTimer); //Open
-    $(".select-area").css("height", "0"); //Close
+    setTimeout(() => { $(".project").css("height", heights.project); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
 };
 
 function gotosetting() {
-    setTimeout(() => { $(".setting-area").css("height", contentHeight); }, AnimationTimer); //Open
-    $(".select-area").css("height", "0"); //Close
+    setTimeout(() => { $(".setting").css("height", heights.setting); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
 };
 
 function gotoabout() {
-    setTimeout(() => { $(".about-area").css("height", contentHeight); }, AnimationTimer); //Open
-    $(".select-area").css("height", "0"); //Close
+    setTimeout(() => { $(".about").css("height", heights.about); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
 };
 
 
 $(".back-to-menu-button").click( function(){
     var name = $(this).closest('div').attr("class").split(' ')[1];
-    setTimeout(() => { $(".select-area").css("height", lobbyHeight); }, AnimationTimer);
-    $(".chat-area").css("height", "0");
+    setTimeout(() => { $(".select").css("height", heights.select); }, AnimationTimer);
+    $(".chat").css("height", "0");
     $(`.${name}`).css("height", "0");
 });
 

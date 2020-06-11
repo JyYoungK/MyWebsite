@@ -82,40 +82,35 @@ hr {
 }
 
 /*Main Default Area Height, others are closed by having 0 height until someone opens them*/
-.select-area { 
-    height: 50%;
+.select { 
+    height: 40%;
 }
 
-.chat-area {
+.chat {
     height: 0;
 }
 
-.chat-button-area{
-    align-items: center;
-    justify-content: center;
-}
-
-.corona-area {
+.corona {
     height: 0;
 }
 
-.poker-area {
+.poker {
     height: 0;
 }
 
-.camera-area {
+.camera {
     height: 0;
 }
 
-.project-area {
+.project {
     height: 0;
 }
 
-.setting-area {
+.setting {
     height: 0;
 }
 
-.about-area {
+.about {
     height: 0;
 }
 
