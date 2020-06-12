@@ -1,0 +1,139 @@
+button{
+    width:110px;
+    height:35px;
+    font-family: 'Press Start 2P', cursive;
+    border-style: none;
+    text-align:center;
+    align-items: center;
+    color:#fff;
+    font-size: 10px;
+    font-weight: 600;
+    outline: none;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    border: 1px solid purple;
+
+}
+  
+button:hover {
+    box-shadow: 1px 1px 25px 10px rgba(175, 238, 238, 0.4);
+  }
+  
+button:before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(146, 148, 248, 0.4),
+        transparent
+    );
+    transition: all 650ms;
+}
+
+button:hover:before {
+    left: 100%;
+}
+
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(171, 226, 19, 0), rgb(25, 25, 112));
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(171, 226, 19, 0), rgb(245, 41, 245));
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(171, 226, 19, 0), rgb(245, 41, 245));
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(171, 226, 19, 0), rgb(25, 25, 112));
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+.chat-button-area{
+    align-items: center;
+    justify-content: center;
+}
+
+.enter-button{
+    /* background: linear-gradient(to left top, rgb(25, 25, 112) 50%, rgb(128, 0, 128) 50%); */
+    background: rgb(75, 18, 165);
+
+}
+.back-to-menu-button {
+    background: rgb(128, 0, 128);   
+}

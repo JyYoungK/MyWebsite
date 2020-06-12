@@ -1,0 +1,59 @@
+#maintenance {
+	color: rgb(219, 161, 89);
+	font-family: 'Press Start 2P', cursive;
+	text-shadow:2px 2px #57520c;
+}
+
+#gamefont {
+	color:rgba(66, 244, 220, 1);
+	font-family: 'Press Start 2P', cursive;
+    text-shadow:2px 2px #3498db;
+    padding: 10px;
+}
+
+#gamefont2 {
+	color:rgba(138, 43, 226);
+	font-family: 'Press Start 2P', cursive;
+    text-shadow:2px 2px #3498db;
+    padding: 5px;
+}
+
+#chatareafont {
+	color:rgb(255, 88, 247);
+	text-indent: 30px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 15px;
+	text-shadow:2px 2px purple;
+	padding: 2px;
+}
+
+.cameraareafont{
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 14px;
+}
+
+#aboutareafont {
+	color:orange;
+	font-family: 'Press Start 2P', cursive;
+    text-shadow:1px 1px purple;
+}
+
+#aboutareafont2 {
+	color:purple;
+	font-family: 'Press Start 2P', cursive;
+    text-shadow:2px 2px lightblue;
+	font-size: 15px;
+}
+
+#aboutareafont3 {
+	color:lightgreen;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 14px;
+}
+
+#creditareafont{
+	color: rgb(64, 228, 64);
+	font-family: 'Press Start 2P', cursive;
+	font-size: 13px;
+}

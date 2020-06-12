@@ -1,0 +1,85 @@
+.theme-arcade {
+    background: url("../images/gifs/night.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.theme-dark {
+  background: url("../images/gifs/day.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.theme-button {
+    border-radius: 40px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.theme-button i {
+    font-size: 30px;
+}
+
+.theme-button:focus {
+    border-color: var(--accent-color);
+}
+
+.theme-button:hover {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    bottom: 4px;
+  }
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 23px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+input:checked + .slider {
+    background-color: black;
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+  }
