@@ -5,6 +5,7 @@ let labelContainer, model, maxPredictions, mfmodel, mfmaxPredictions;
 var testImage = document.getElementById("face-image");
 
 async function init() {
+    $('.cameradescription').hide();
     const modelURL = URL + "model.json";
     const metadataURL = URL + "metadata.json";
     const mfmodelURL = URL2 + "model.json";

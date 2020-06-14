@@ -2,16 +2,17 @@
 
 var li = $('li');
 var liSelected;
+//Stay 50~80%
 const heights = {
-    select : "40%",
-    chat : "40%",
-    corona : "50%",
-    poker : "40%",
+    select : "50%",
+    chat : "60%",
+    corona : "60%",
+    poker : "60%",
     camera : "75%",
     project : "80%",
-    setting : "40%",
+    setting : "50%",
     about : "60%",
-    credit : "40%",
+    credit : "60%",
 };
 // const contentHeight = "80%";
 

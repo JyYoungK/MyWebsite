@@ -1,6 +1,7 @@
 .theme-arcade {
     background: url("../images/gifs/night.gif") no-repeat center center fixed;
     background-size: cover;
+
 }
 
 .theme-dark {
@@ -57,7 +58,8 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
+/* white square */
 .slider:before {
     position: absolute;
     content: "";
@@ -82,4 +84,19 @@ input:checked + .slider:before {
     -webkit-transform: translateX(23px);
     -ms-transform: translateX(23px);
     transform: translateX(23px);
+  }
+
+  @media (min-width: 320px) and (max-width: 385px) {
+    .switch {
+      width: 35px;
+    }
+    /* white square */
+    .slider:before {
+      width: 15px;
+    }
+    input:checked + .slider:before {
+      -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+      transform: translateX(16px);
+    }
   }

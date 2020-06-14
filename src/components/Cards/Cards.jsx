@@ -9,8 +9,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
   return (
     <div className={styles.container}>
-      <div className = {styles.coronaAreaFont}>Following Information up to date:</div>
-      <div className = {styles.coronaAreaFont}>{new Date(lastUpdate).toDateString()}</div>
+      <div className = {styles.coronaAreaFont}>As of {new Date(lastUpdate).toDateString()}</div>
       <br></br>
       <pre className = {styles.coronaInfected}>Infected : {confirmed.value}</pre>
       <pre className = {styles.coronaRecovered}>Recovered: {recovered.value}</pre>
