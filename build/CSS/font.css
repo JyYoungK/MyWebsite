@@ -52,9 +52,9 @@
 }
 
 #creditareafont{
-	color: rgb(64, 228, 64);
+	color: rgb(157, 241, 157);
 	font-family: 'Press Start 2P', cursive;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 @media (max-height: 752px) {
