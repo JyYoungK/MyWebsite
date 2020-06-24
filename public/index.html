@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/smartcamera.css">
 	<link rel="stylesheet" type="text/css" href="CSS/setting.css">
 	<link rel="stylesheet" type="text/css" href="CSS/about.css">
+	<link rel="stylesheet" type="text/css" href="CSS/cardgame.css">
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	
 </head>
@@ -26,7 +27,7 @@
 				<ul id="horizontal">
 					<li onclick= "gotochat()" class="option1" id="gamefont">Chat Area</li>
 					<li onclick= "gotocorona()" class="option2" id="gamefont">Corona Stats</li>
-					<li onclick= "gotopoker()" class="option3" id="gamefont">Poker Game</li>
+					<li onclick= "gotopoker()" class="option3" id="gamefont">Card Game</li>
 					<li onclick= "gotocamera()" class="option4" id="gamefont">Smart Camera</li>
 					<!-- <li onclick= "gotoproject()" class="option5" id="gamefont">Other Projects</li> -->
 					<li onclick= "gotosetting()" class="option6" id="gamefont">Settings</li>
@@ -70,8 +71,34 @@
 			</div>
 
 			<div class="main-area poker">
-				<h2 id="gamefont"> Poker </h2>
-
+				<!-- <h2 id="gamefont"> Card Game </h2> -->
+				<div class="wrapper">
+					<div id="game">
+					  <div id="alert" class="alert alert-error hide"><span></span></div>
+					  <div id="dealer">
+						<div id="dhand"></div>
+					  </div>
+					  <div id="player">
+						<div id="phand"></div>
+					  </div>
+					</div>
+					<div id="actionButtons">
+					  <div id="actions">
+						  <div>
+							<button id="deal">Deal</button>
+							<button id="hit" disabled>Hit</button>
+							<button id="stand" disabled>Stand</button>
+						  </div>
+						  <div>
+							<strong id="bet"> Bet: $</strong><input id="wager" class="input-small" type="text" maxlength="5" />
+						  </div>
+						</div>
+						<div class="lottery" id="earning"> 
+							  Press Deal to start 
+						</div>
+						<span id="cash">Wallet: $<span></span></span>
+					</div>
+				</div>
 	
 				<button class ="back-to-menu-button"> BACK
 				    <span></span>
@@ -176,15 +203,17 @@
 		<p class= 'title'>Insert Coin</p>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script> <!-- For Camera -->
-	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script> <!-- For Camera -->
-	<script src="./JS/mouse.js"></script>
-	<script src="./JS/smartcameramain.js"></script>
-	<script src="./JS/calculation.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jquery -->
 	<script src="./JS/buttons.js"></script>
-	<script src="./JS/settings.js"></script>
 	<script src="./JS/mail.js"></script>
+	<script src="./JS/settings.js"></script>
+	<script src="./JS/calculation.js"></script> <!-- Camera -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script> <!-- Camera -->
+	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script> <!-- Camera -->
+	<script src="./JS/smartcameramain.js"></script> <!-- Camera -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> <!-- Card Game -->
+	<script src='https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js'></script> <!-- Card Game -->
+	<script  src="./JS/cardgame.js"></script> <!-- Card Game -->
 
 
 </body>

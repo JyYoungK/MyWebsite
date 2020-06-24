@@ -7,7 +7,7 @@ const heights = {
     select : "50%",
     chat : "60%",
     corona : "60%",
-    poker : "60%",
+    poker : "78%",
     camera : "75%",
     project : "80%",
     setting : "50%",
