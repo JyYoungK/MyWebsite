@@ -7,7 +7,9 @@ const heights = {
     select : "50%",
     chat : "60%",
     corona : "60%",
-    poker : "78%",
+    game: "30%",
+    poker : "85%",
+    reinforce : "50%",
     camera : "75%",
     project : "80%",
     setting : "50%",
@@ -91,9 +93,18 @@ function gotocorona() {
     $(".select").css("height", "0"); //Close
 };
 
+function gotogame() {
+    setTimeout(() => { $(".game").css("height", heights.game); }, AnimationTimer); //Open
+    $(".select").css("height", "0"); //Close
+};
+
 function gotopoker() {
     setTimeout(() => { $(".poker").css("height", heights.poker); }, AnimationTimer); //Open
-    $(".select").css("height", "0"); //Close
+    $(".game").css("height", "0"); //Close
+};
+function gotoreinforce() {
+    setTimeout(() => { $(".reinforce").css("height", heights.reinforce); }, AnimationTimer); //Open
+    $(".game").css("height", "0"); //Close
 };
 
 function gotocamera() {
@@ -126,6 +137,8 @@ $(".back-to-menu-button").click( function(){
     var name = $(this).closest('div').attr("class").split(' ')[1];
     setTimeout(() => { $(".select").css("height", heights.select); }, AnimationTimer);
     $(".chat").css("height", "0");
+    $(".poker").css("height", "0");
+    $(".reinforce").css("height", "0");
     $(`.${name}`).css("height", "0");
 });
 
