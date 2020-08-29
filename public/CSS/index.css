@@ -19,8 +19,8 @@ hr {
 
  .content-area {
     width: 120vw;
-    height: 90vh;
-    max-width: 500px;
+    height: 110vh;
+    max-width: 600px;
     min-height: 650px;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ hr {
 }
 
  .select { 
-    height: 50%;
+    height: 20%;
 }
 
 .chat {
