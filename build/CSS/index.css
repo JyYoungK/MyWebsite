@@ -19,8 +19,8 @@ hr {
 
  .content-area {
     width: 120vw;
-    height: 90vh;
-    max-width: 500px;
+    height: 110vh;
+    max-width: 600px;
     min-height: 650px;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     transition-property: height;
     transition-duration: 0.5s;
     overflow: hidden;
@@ -65,7 +65,7 @@ hr {
 }
 
  .select { 
-    height: 50%;
+    height: 30%;
 }
 
 .chat {
@@ -85,6 +85,10 @@ hr {
 }
 
 .reinforce{
+    height: 0;
+}
+
+.aiming{
     height: 0;
 }
 
@@ -138,4 +142,9 @@ ul#horizontal li {
     .title {
         visibility: hidden;
       }
+
+    .content-area{
+        height: 100%;
+      }
 }
+

@@ -4,17 +4,18 @@ var li = $('li');
 var liSelected;
 //Stay 50~80%
 const heights = {
-    select : "50%",
-    chat : "60%",
-    corona : "60%",
+    select : "35%",
+    chat : "30%",
+    corona : "40%",
     game: "30%",
     poker : "85%",
     reinforce : "50%",
-    camera : "75%",
-    project : "80%",
-    setting : "50%",
-    about : "60%",
-    credit : "60%",
+    aiming : "200%",
+    camera : "45%",
+    project : "40%",
+    setting : "25%",
+    about : "40%",
+    credit : "35%",
 };
 // const contentHeight = "80%";
 
@@ -107,6 +108,11 @@ function gotoreinforce() {
     $(".game").css("height", "0"); //Close
 };
 
+function gotoexactaiming() {
+    setTimeout(() => { $(".aiming").css("height", heights.reinforce); }, AnimationTimer); //Open
+    $(".game").css("height", "0"); //Close
+};
+
 function gotocamera() {
     setTimeout(() => { $(".camera").css("height", heights.camera); }, AnimationTimer); //Open
     $(".select").css("height", "0"); //Close
@@ -139,6 +145,7 @@ $(".back-to-menu-button").click( function(){
     $(".chat").css("height", "0");
     $(".poker").css("height", "0");
     $(".reinforce").css("height", "0");
+    $(".aiming").css("height", "0");
     $(`.${name}`).css("height", "0");
 });
 

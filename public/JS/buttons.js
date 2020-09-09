@@ -4,10 +4,10 @@ var li = $('li');
 var liSelected;
 //Stay 50~80%
 const heights = {
-    select : "20%",
+    select : "35%",
     chat : "30%",
-    corona : "30%",
-    game: "15%",
+    corona : "40%",
+    game: "30%",
     poker : "85%",
     reinforce : "50%",
     aiming : "200%",

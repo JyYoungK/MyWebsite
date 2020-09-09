@@ -57,7 +57,7 @@
 	font-size: 15px;
 }
 
-@media (max-height: 752px) {
+@media (min-height: 652px) {
 	#aboutareafont{
 		font-size: 14px;
 	}

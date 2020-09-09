@@ -65,7 +65,7 @@ hr {
 }
 
  .select { 
-    height: 20%;
+    height: 30%;
 }
 
 .chat {
@@ -142,4 +142,9 @@ ul#horizontal li {
     .title {
         visibility: hidden;
       }
+
+    .content-area{
+        height: 100%;
+      }
 }
+
